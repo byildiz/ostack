@@ -1,0 +1,22 @@
+body {
+  font-family: helvetica,tahoma,verdana,arial,sans-serif;
+  font-size: 13px;
+}
+
+#page {
+  width: 900px;
+  margin: 0px auto;
+}
+
+#header {
+  margin-bottom: 10px;
+}
+
+#footer {
+  margin-top: 10px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 50px;
+}
