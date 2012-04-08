@@ -3,14 +3,14 @@
 -- http://www.phpmyadmin.net
 -- 
 -- Anamakine: localhost
--- Üretim Zamanı: 14 Mart 2012 saat 16:38:18
+-- Üretim Zamanı: 08 Nisan 2012 saat 16:38:29
 -- Sunucu sürümü: 5.0.51
 -- PHP Sürümü: 5.2.6
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 
 -- 
--- Veritabanı: `qas`
+-- Veritabanı: `ostack`
 -- 
 
 -- --------------------------------------------------------
@@ -205,6 +205,27 @@ CREATE TABLE `question_vote` (
 
 INSERT INTO `question_vote` VALUES (1, 1, 1);
 INSERT INTO `question_vote` VALUES (1, 2, 0);
+
+-- --------------------------------------------------------
+
+-- 
+-- Tablo yapısı: `sessions`
+-- 
+
+CREATE TABLE `sessions` (
+  `session_id` varchar(40) NOT NULL default '0',
+  `ip_address` varchar(16) NOT NULL default '0',
+  `user_agent` varchar(120) NOT NULL,
+  `last_activity` int(10) unsigned NOT NULL default '0',
+  `user_data` text NOT NULL,
+  PRIMARY KEY  (`session_id`),
+  KEY `last_activity_idx` (`last_activity`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Tablo döküm verisi `sessions`
+-- 
+
 
 -- --------------------------------------------------------
 
