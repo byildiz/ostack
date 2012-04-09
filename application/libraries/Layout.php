@@ -18,10 +18,10 @@ class Layout
 
   public function view($view, $data = null, $return=false)
   {
-    $loadedData = array();
+    $loadedData = $data;
     $loadedData['content_for_layout'] = $this->obj->load->view($view, $data, true);
 
-    if($return) {
+    if ($return) {
       $output = $this->obj->load->view($this->layout, $loadedData, true);
       return $output;
     } else {

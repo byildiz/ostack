@@ -3,6 +3,19 @@ body {
   font-size: 13px;
 }
 
+table {
+  width: 100%;
+}
+
+input[type='text'], input[type='password'] {
+  width: 250px;
+}
+
+textarea {
+  width: 550px;
+  height: 150px;
+}
+
 #page {
   width: 900px;
   margin: 0px auto;
@@ -12,6 +25,10 @@ body {
   margin-bottom: 10px;
 }
 
+#session {
+  float: right;
+}
+
 #footer {
   margin-top: 10px;
 }
@@ -19,4 +36,39 @@ body {
 .logo {
   font-weight: bold;
   font-size: 50px;
+}
+
+.error {
+  color: red;
+}
+
+.copyleft {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -khtml-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  display: inline-block;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.text {
+  font-size: 18px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.right {
+  text-align: right;
+}
+
+.width100 {
+  width: 100px;
 }
